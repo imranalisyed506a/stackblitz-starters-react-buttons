@@ -8,7 +8,7 @@ export default function App() {
     console.log(event.target.innerHTML);
   }
   const d = c.map((cc, index: any) => {
-    return <Hello name={index} onClickHandler={onClickHandler} />;
+    return <Hello name={index} key={index} onClickHandler={onClickHandler} />;
   });
   return <div> {d} </div>;
 }
